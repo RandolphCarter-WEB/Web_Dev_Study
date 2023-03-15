@@ -1,0 +1,112 @@
+.all_page {
+    display: grid;
+    place-items: center;
+    
+    width: 900px;
+
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.headline_title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article_class {
+    margin-bottom: 0.5rem;
+}
+
+.head_title {
+    margin-bottom: 1rem;
+
+    color: black;
+    font-size: 1rem;
+}
+
+.who_write {
+    margin-bottom: 0.3rem;
+
+    color: black;
+}
+
+.article_txt {
+    margin-top: 1rem;
+}
+
+.img_fig {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    width: 600px;
+}
+
+.main_txt {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+
+    width: 600px;
+    color: black;
+
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}
+
+.main_txt p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    white-space: nomal;
+}
+
+.main1_txt {
+    margin-bottom: 5rem;
+}
+
+.add_data {
+    padding: 1.5rem;
+
+    width: 600px;
+    border: 1px solid gray;
+}
+
+.exp_title {
+    margin-bottom: 2rem;
+
+    font-size: 1.3rem;
+    color: turquoise;
+}
+
+.expmain_txt p{
+    margin-top: 0.5rem;
+    margin-bottom: 1.4rem;
+
+    white-space: nomal;
+}
+
+#head_bodyline {
+    display: flex;
+
+    width: 800px;
+
+    margin-top: 1rem;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+}
+
+#img_figcap01 {
+    margin-top: 0.7rem;
+}
+
+#add_txtline {
+    display: flex;
+
+    margin-top: 1px;
+
+    width: 250px;
+    border: 1px solid turquoise;
+}
+
+#add_title {
+    margin-bottom: 0px;
+}

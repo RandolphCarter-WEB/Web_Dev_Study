@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            input[type="text"]:enabled {
+                background-color: greenyellow;
+            }
+
+            input[type="text"]:disabled {
+                background-color: aqua;
+            }
+
+            input[type="checkbox"] {
+                display: none;
+            }
+
+            input[type="checkbox"]:checked + label {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="txt1" name="txt1"><br>
+        <input type="text" id="txt2" name="txt2" disabled>
+
+        <div>
+            <input type="checkbox" name="ch" id="ch1"><label for="ch1">Check01</label>
+            <input type="checkbox" name="ch" id="ch2"><label for="ch2">Check02</label>
+            <input type="checkbox" name="ch" id="ch3"><label for="ch3">Check03</label>
+        </div>
+    </body>
+</html>

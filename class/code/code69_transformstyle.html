@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .container {
+            border: 1px solid #000;
+            perspective: 300px;
+            margin-top: 100px;
+            margin-left: 100px;
+            float: left;
+        }
+
+        .box01 {
+            background-color: aqua;
+            transform: rotateY(45deg);
+            transform-origin: left top;
+        }
+        .box02 {
+            background-color: blue;
+            transform-origin: left top;
+            transform: rotateX(45deg);
+        }
+        #tr-style01 {
+            transform-style: flat;
+        }
+        #tr-style02 {
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box01" id="tr-style01">
+            <div class="box02"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box01" id="tr-style02">
+            <div class="box02"></div>
+        </div>
+    </div>
+</body>
+</html>

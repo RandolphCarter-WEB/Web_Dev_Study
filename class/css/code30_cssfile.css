@@ -1,0 +1,18 @@
+#h5, #h4 {
+    color:greenyellow;
+}
+
+#h2, #h3 {
+    color: blueviolet;
+}
+
+* {
+    border: 1px solid black;
+    margin:0;
+    padding: 0;
+}
+
+.h1 {
+    color:red;
+    margin: 0.5em;
+}

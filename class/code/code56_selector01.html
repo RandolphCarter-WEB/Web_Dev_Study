@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container > ul > li {
+                color: red;
+            }
+                                                            
+            .container li {
+                text-decoration: underline;
+            }
+
+            .item01 + li {
+                color: purple;
+            }
+
+            .item01 + .item03 {
+                background-color: yellowgreen;
+            }
+
+            .div01 {
+                display: none;
+
+                border: 1px solid #000;
+            }
+
+            .item03_02:hover + .div01 {
+                display: block;
+                position: fixed;
+                left: 0;
+                top: 0;
+            }
+
+            .item02 ~ li {
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <ul>
+                <li class="item01">TEXT1</li>
+                <li>TEXT2</li>
+                <li class="item03">TEXT3</li>
+                <ul>
+                    <li>Text3-1</li>
+                    <li class="item03_02">Text3-2</li>
+                    <div class="div01">hello</div>
+                </ul>
+                <br><br>
+                <ul>
+                    <li>TEXT1</li>
+                    <li class="item02">TEXT2</li>
+                    <li>TEXT3</li>
+                    <li>TEXT4</li>
+                </ul>
+            </ul>
+        </div>
+    </body>
+</html>

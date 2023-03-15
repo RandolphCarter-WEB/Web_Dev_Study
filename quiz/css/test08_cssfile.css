@@ -1,0 +1,151 @@
+li {
+    margin-top: 1rem;
+}
+
+/* Q1 CSS */
+    .q1_headdiv h1 {
+        background-color: red;
+
+        max-width: 1000px;
+        min-width: 500px;
+    }
+
+    .q1_felxdiv {
+        display: flex;
+
+        max-width: 1000px;
+        min-width: 500px;
+    }
+
+    .q1_asidediv {
+        background-color: blue;
+        color: white;
+
+        width: 30%;
+    }
+
+    .q1_contentdiv {
+        background-color: yellow;
+
+        width: 70%;
+    }
+
+/* Q2 CSS */
+    .q2_flexul {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        list-style-type: none;
+    }
+
+    .q2_flexul li {
+        margin-right: 2rem;
+        margin-top: 1rem;
+        padding-top: 10px;
+        border: 1px solid #000;
+
+        width: 100px;
+        height: 35px;
+
+        text-align: center;
+    }
+
+/* Q3 CSS */
+    .q3_flexul {
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        list-style-type: none;
+
+        margin-top: 2rem;
+    }
+
+    .q3_flexul li {
+        margin-right: 2rem;
+        margin-top: 1rem;
+        padding-top: 10px;
+
+        width: 100px;
+        height: 25px;
+
+        text-align: center;
+        color: blue;
+
+        background-color: yellow;
+    }
+
+    .q3_flexul a {
+        text-decoration: none;
+        background-color: yellow;
+    }
+
+    .q3_flexul li:first-of-type {
+        background-color: white;
+    }
+    
+/* Q4 CSS */
+    .q4_div01 {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        width: 100%;
+
+        white-space: normal;
+    }
+
+    .q4_div01 div {
+        margin: 2rem;
+
+        width: 190px;
+        height: 100px;
+    }
+
+    .q4_boxdiv01 {
+        border: 5px solid #000;
+    }
+
+    .q4_boxdiv02 {
+        border: 3px dotted #000;
+    }
+
+    .q4_boxdiv03 {
+        border: 5px dashed #000;
+    }
+
+    .q4_boxdiv04 {
+        border: 3px ridge gray;
+    }
+
+    .q4_boxdiv05 {
+        border: 3px inset gray;
+    }
+
+/* Q5 CSS */
+    .q5_div01 {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+
+        width: 100%;
+    }
+
+    .q5_div01 div {
+        margin-right: 2rem;
+        border: 3px solid red;
+        border-radius: 20px;
+
+        width: 300px;
+        height: 200px;
+    }
+
+    .q5_boxdiv02 {
+        background-image: url(../image/cat_meme.jpg);
+        background-size: cover;
+    }

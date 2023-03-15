@@ -1,0 +1,31 @@
+.OranTag {
+    color: orange;
+}
+
+.BlueTag {
+    color:Blue;
+}
+
+.listTag {
+    margin-bottom: 3rem;
+}
+
+.div_Box {
+    border:1px solid black;
+    padding-left: 1rem;
+
+    width: 300px;
+}
+
+.BigP {
+    font-size: 30px;
+}
+
+.Bigred {
+    font-size: 55px;
+    color: red;
+}
+
+.Ex {
+    margin-left: 1rem;
+}

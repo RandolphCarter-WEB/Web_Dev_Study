@@ -1,0 +1,37 @@
+/* Q1 CSS */
+    .q1_imgdiv {
+        margin: 1.5rem;
+
+        width: auto;
+        height: 500px;
+    }
+
+    @media  (min-width: 550px) {
+        .q1_imgdiv {
+            background-image: url(../image/shop-small.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+            height: 350px;
+        }
+    }
+    
+    @media  (min-width: 1024px) {
+        .q1_imgdiv {
+            background-image: url(../image/shop-medium.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+            height: 350px;
+        }
+    }
+    
+    @media  (min-width: 1400px) {
+        .q1_imgdiv {
+            background-image: url(../image/shop-large.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+            height: 500px;
+        }
+    }

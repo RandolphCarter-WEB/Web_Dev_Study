@@ -1,0 +1,110 @@
+.Article_div {
+    position: absolute;
+    top: 10%; left: 10%;
+
+    width: 900px;
+
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+
+/*headLine CSS*/
+    .Headline_div {
+        padding-bottom: 1.3rem;
+    }
+
+    .ArticleSelect_div {
+        font-size: 1rem;
+        color: gray;
+    }
+
+    .ArticleHeadText {
+        margin-bottom: 1rem;
+
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .ArticleInfo_div {
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        color: gray;
+    }
+
+    .RepoterText_div {
+        color: black;
+    }
+
+    #HeadToMain_line {
+        display: flex;
+        margin-top: 0.3rem;
+        border: 0.7px solid;
+    }
+
+/*Main Img Article CSS*/
+    .MainArticle_div {
+        margin-left: 0.3rem;
+        width: 900px;
+
+        font-size: 1rem;
+    }
+
+    .ImgExp_fig {
+        margin-bottom: 1.3rem;
+        margin-left: 0.3rem;
+        width: 620px;
+    }
+
+    figcaption p {
+        width: 600px;
+        font-size: 0.9rem;
+    }
+
+    #PictureOfArticle01_img {
+        width: 620px;
+    }
+
+/*Main Text Article CSS*/
+    .MainArticleText_div {
+        width: 600px;
+        line-height: 1.8rem;
+        white-space: normal;
+        color: black;
+    }
+
+    .MainArticleText_div li {
+        margin-bottom: 3rem;
+    }
+
+    .MainArticleText_div p {
+        margin-bottom: 1rem;
+    }
+
+/*Plus Text Article CSS*/
+    .PlusArticle_div {
+        padding: 1.5rem;
+        width: 570px;
+        border: 0.7px solid gray;
+    }
+
+    .PlusArticleTitle_div {
+        margin-bottom: 2rem;
+        color:turquoise;
+    }
+
+    .PlusArticleText_div {
+        line-height: 1.5rem;
+        white-space: normal;
+    }
+
+    .PlusArticleText_div p {
+        margin-bottom: 1.7rem;
+    }
+
+    #PlusTitle_line {
+        display:flex;
+        width: 190px;
+        border: 0.7px solid turquoise;
+    }

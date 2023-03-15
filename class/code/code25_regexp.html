@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="./code10_hyperlink01.html" method="get">
+            <ul>
+                <li><label for="name">name >></label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        pattern="[가-힣]{2,4}"
+                        title="write down your name with 3 char"
+                        required>
+                </li>
+
+                <li><label for="SchoolNum">SchoolNum >></label>
+                    <input
+                        type="SchoolNum"
+                        name="SchoolNum"
+                        id="SchoolNum"
+                        pattern="^(1\d{3}|200\d|201[0-9]|202[0-3])\d{4}"
+                        title="write down your SchoolNum (Year + 4time Num)"
+                        required>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li><button>send</button></li>
+            </ul>
+        </form>
+    </body>
+</html>

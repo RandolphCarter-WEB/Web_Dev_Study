@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            input[type="radio"] {
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="#" method="get">
+            <label id="la1" for="rd1">radio1</label>
+            <input type="radio" name="rd" id="rd1"><br>
+            <label for="rd2">radio2</label>
+            <input type="radio" name="rd" id="rd2"><br>
+            <label for="rd3">radio3</label>
+            <input type="radio" name="rd" id="rd3"><br>
+            <button>send</button>
+        </form>
+
+        <script>
+            document.getElementById("rd1").addEventListener("change",function() {
+                la1.textContent="체크됨";
+            });
+        </script>
+    </body>
+</html>

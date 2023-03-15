@@ -1,0 +1,194 @@
+html, body {
+    height: 100%;
+}
+
+.content_div {
+    display: grid;
+}
+
+/* HEADER CSS */
+    header {
+        background-image: url(../image/pention_image.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        max-width: 2000px;
+        min-width: 500px;
+
+        max-height: 100px;
+        min-height: 600px;
+    }
+
+    .header_txt {
+        position: absolute;
+
+        top: 50%;
+        left: 60%;
+        margin-top: -25%;
+
+        min-width: 350px;
+        min-height: 140px;
+    }
+
+    .header_txt h1 {
+        background: linear-gradient(-140deg, #FFBA46 45%, #ffffff);
+        color: transparent;
+        -webkit-background-clip: text;
+
+        filter: drop-shadow(3px 5px #392f31);
+
+        font-size: 4.5rem;
+    }
+
+    .header_txt h3 {
+        float: right;
+        margin-right: 1rem;
+
+        font-size: 1.5rem;
+        color: #FFDDDD;
+
+        text-shadow: 4px 3px #392f319d;
+    }
+
+/* HEADER NAV CSS */
+    .nav_ul {
+        display: flex;
+
+        text-align: center;
+        justify-content: left;
+
+        background-color: #69491A;
+    }
+
+    .nav_ul li {
+        margin-left: 4rem;
+
+        font-size: 1.7rem;
+        color: white;
+    }
+
+.content_div {
+    display: flex;
+
+    height: 100%;
+}
+
+/* ASIDE CSS */
+    aside {
+        float: right;
+        padding: 1rem;
+        width: 30%;
+        height: auto;
+
+        background-color: rgba(172, 255, 47, 0.692);
+    }
+
+    .aside_title {
+        font-size: 1.5rem;
+    }
+
+    .aside_txt {
+        font-size: 1.15rem;
+    }
+
+    .aside_img {
+        display: inline-block;
+
+        width: 95%;
+    }
+
+    .aside_img01 {
+        background-image: url(../image/house1.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+
+        margin-top: 1rem;
+
+        width: 300px;
+        height: 150px;
+
+    }
+    .aside_img02 {
+        background-image: url(../image/house2.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin-top: 1rem;
+
+        width: 300px;
+        height: 150px;
+    }
+    .aside_img03 {
+        background-image: url(../image/house3.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin-top: 1rem;
+
+        width: 300px;
+        height: 150px;
+    }
+   
+/* SECTION ARTICLE CSS */
+    article {
+        width:65%;
+        height: auto;
+
+        padding-left: 1rem;
+        padding-right: 3rem;
+    }
+
+    .article_title {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        font-size: 2rem;
+    }
+
+    .article_txt {
+        font-size: 1.3rem;
+    }
+
+    .article_txt p {
+        margin-bottom: 1rem;
+    }
+
+    .article_img {
+        background-image: url(../image/banner.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        width: 98%;
+        height: 100px;
+    }
+
+    /* FOOTER CSS */
+    footer {
+        padding: 1rem;
+        height: 100px;
+
+        background-color: gray;
+    }
+    
+    footer > address {
+        font-size: 1rem;
+        text-align: left;
+
+        color: white;
+    }
+
+    footer > p {
+        font-size: 1rem;
+        text-align: left;
+
+        color: white;
+    }

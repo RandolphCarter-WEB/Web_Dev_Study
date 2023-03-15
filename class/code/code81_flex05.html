@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../default.css">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            flex: 1 1 auto;
+        }
+        /* .flex-item:nth-child(1) {
+            flex-basis: 0;
+            width: 100px;
+        } */
+        /* .flex-item p {
+            white-space: nowrap;
+            overflow: hidden;
+        } */
+
+        .flex-item:nth-child(2) {
+            width: 20%;
+        }
+        .flex-item:nth-child(3) {
+            width: 60%;
+        }
+        .flex-item:nth-child(4) {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, dicta aspernatur. Architecto similique facere soluta corrupti consequuntur? Nostrum neque sequi et nobis eum rerum nesciunt illo beatae. Voluptas, blanditiis placeat?</p>
+        </div>
+
+        <div class="flex-item">AAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBB</div>
+        <div class="flex-item">CCCCCCCCCCCCCC</div>
+        <div class="flex-item">DDDDDDDDDDDDDDDDDDDDDDDD</div>
+    </div>
+</body>
+</html>

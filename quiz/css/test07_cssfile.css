@@ -1,0 +1,143 @@
+.green_text {
+    color: greenyellow;
+}
+
+.red_text {
+    color: red;
+}
+
+/* Q1 CSS */
+    .q1_div01 {
+        width: 200px;
+        background-color: aqua;
+        color: blueviolet;
+    }
+
+    .q1_div02 h2 {
+        color: blue;
+    }
+
+    .q1_div02 ul {
+        list-style-type: disc;
+    }
+
+    .q1_div02 li:first-of-type {
+        color: blue;
+    }
+
+    .q1_div02 li:last-of-type {
+        color: blue;
+    }
+
+    .q1_div03 h2 {
+        color: red;
+    }
+
+    .q1_div03 ul {
+        list-style-type: disc;
+    }
+
+    .q1_div03 li:first-of-type {
+        color: red;
+    }
+
+    .q1_div03 li:last-of-type {
+        color: red;
+    }
+
+/* Q2 CSS */
+    .q2_div01 {
+        line-height: 2rem;
+    }
+
+    .q2_div02 ul {
+        list-style-type: disc;
+    }
+
+    .q2_div02 li {
+        color: blue;
+    }
+
+    .q2_div02 li:first-of-type {
+        width: 170px;
+        background-color: blue;
+    }
+
+    .q2_div02 a {
+        color: white;
+    }
+
+/* Q3 CSS */
+    .q3_div01 {
+        padding: 0.3rem;
+
+        width: 495px;
+        height: 180px;
+
+        white-space: normal;
+        background-color: rgba(137, 43, 226, 0.2);
+        border: 1px solid blue;
+    }
+
+/* Q4 CSS */
+    .q4_div01 {
+        display: flex;
+
+        /*float : right; margin-right: 10px*/
+    }
+
+    .q4_div02 {
+        width: 500px;
+    }
+
+    .q4_div01 h3 {
+        color: blue;
+    }
+
+/* Q5 CSS */
+    .q5_div01 {
+        background-image: url(../image/apple-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 600px;
+        height: 380px;
+
+        position: relative;
+    }
+
+    .q5_div02 {
+        width: 450px;
+        height: 70px;
+
+        position: absolute;
+        bottom: 50px;
+        left: 15%;
+
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    /*
+    .container {
+        border: 1px solid black;
+        width: 800px;
+        height: 600px;
+
+        box-sizing:border-box;
+        background-image: url(../image/app-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        backgound-position: center;
+    }
+
+    .content {
+        margin-left: 40px;
+        margin-top: 500px;
+
+        width: 720px;
+
+        text-align: center;
+        backgrount-color: rgba(255,255,255,0.4);
+    }
+    */

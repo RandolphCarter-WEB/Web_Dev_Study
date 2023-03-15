@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="./review05_result.html">
+            <label for="id"><p>write down your id</p>
+                <input
+                    type="text"
+                    name="id_text"
+                    id="id"
+                    required></label>
+
+            <label for="pw"><p>write down password for id</p>
+                <input
+                    type="Password"
+                    name="pw_text"
+                    id="pw"
+                    alt="input combination of english and korean, numbers"
+                    required></label>
+
+            <label for="name"><p>write your nickname</p>
+                <input
+                    type="text"
+                    name="name_text"
+                    id="name"
+                    required></label>
+
+            <label for="email"><p>write your email address(someone@abc.com)</p>
+                <input
+                    type="email"
+                    name="email_text"
+                    id="email"
+                    pattern="([A-Za-z0-9]+)[@]([A-Za-z]+)[.](com)"
+                    required></label>
+
+            <label for="birth"><p>press your birthday</p>
+                <input
+                    type="date"
+                    name="birth_text"
+                    id="birth"
+                    required></label>
+
+            <label for="color"><p>choose your color</p>
+            <input type="color" name="color" id="color"></label>
+
+            <label for="profile"><p>choose profile picture</p>
+            <input type="file" name="file_name" id="file"></label>
+            <button>send</button>
+        </form>
+    </body>
+</html>

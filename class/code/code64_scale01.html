@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .origin {
+                widows: 210px;
+                height: 200px;
+
+                border: 1px solid #000;
+                float: left;
+                margin: 40px;
+            }
+
+            .scaleX:hover {
+                transform: scaleX(1.2);
+            }
+            .scaleY:hover {
+                transform: scaleY(1.5);
+            }
+            .scale:hover {
+                transform: scale(0.7);
+            }
+            .scaleZ:hover {
+                transform: perspective(500px) scaleZ(1.5);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="scaleX"><img src="../image/fruit.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="scaleY"><img src="../image/fruit.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="scale"><img src="../image/fruit.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="scaleZ"><img src="../image/fruit.jpg" alt=""></div>
+        </div>
+    </body>
+</html>

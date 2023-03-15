@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/test05_cssfile.css">
+    </head>
+    <body>
+        <ol>
+            <li>아래와 같이 만들어 보세요
+                <div class="divmargin">
+                    <form action="./test05_result.html">
+                        <label for="name_input_q1">
+                            <span
+                                style="margin-right: 1rem;">Name</span>
+                            <input
+                                type="text"
+                                name="name_input_q1"
+                                id="name_input_q1"
+                                placeholder="Input Name"
+                                required>
+                        </label>
+
+                        <div>
+                            <span>Gender</span>
+                            <input type="radio"
+                                name="gender_input_q1"
+                                id="man_input_q1"
+                                value="man_input_q1">
+                                <label for="man_input_q1">Man</label>
+                            <input type="radio"
+                                name="gender_input_q1"
+                                id="woman_input_q1"
+                                value="man_input_q1">
+                                <label for="woman_input_q1">woman</label>
+                        </div>
+
+                        <Button class="buttonmargin">Send</Button>
+                    </form>
+                </div>
+            </li>
+
+            <li>아래와 같이 만들어 보세요
+                <div class="divmargin">
+                    <h1>User Info</h1>
+
+                    <div>
+                        <form action="./test05_result.html">
+                            <label for="name_input_q2">
+                                <span>Name</span>
+                                <input
+                                    type="text"
+                                    name="name_input_q2"
+                                    id="name_input_q2"
+                                    placeholder="Input Name"
+                                    required>
+                            </label><br>
+
+                            <label for="tel_input_q2">
+                                <span
+                                    style="margin-right: 1.3rem;">Tel.</span>
+                                <input type="tel"
+                                    name="tel_input_q2"
+                                    id="tel_input_q2"
+                                    pattern="01[0-1][-]\d{4}[-]\d{4}"
+                                    placeholder="Input (000-0000-0000)">
+                            </label><br>
+
+                            <label for="email_input_q2">
+                                <span 
+                                    style="margin-right: 0.3rem;">Email</span>
+                                <input
+                                    type="email"
+                                    name="email_input_q2"
+                                    id="email_input_q2"
+                                    placeholder="Input your Email"
+                                    pattern="([A-Za-z0-9]+)[@]([A-Za-z]+)[.](com|net)"
+                                    required>
+                            </label><br>
+                            
+                            <button class="buttonmargin">Book</button>
+                        </form>
+                    </div>
+                </div>
+            </li>
+
+            <li>아래와 같이 만들어 보세요 - [김밥, 떡볶이, 순대, 어묵, 쫄면] <br>
+                <div class="divmargin">
+                    <select name="KFood" id="kfood">
+                        <option value="김밥" selected>김밥</option>
+                        <option value="떡볶이">떡볶이</option>
+                        <option value="순대">순대</option>
+                        <option value="어묵">어묵</option>
+                        <option value="쫄면">졸면</option>
+                    </select>
+
+                    <select name="KFood" id="kfood" class="QTag" multiple>
+                        <option value="김밥" selected>김밥</option>
+                        <option value="떡볶이">떡볶이</option>
+                        <option value="순대">순대</option>
+                        <option value="어묵">어묵</option>
+                        <option value="쫄면">쫄면</option>
+                    </select>
+                </div>
+            </li>
+
+            <li>아래와 같이 만들어 보세요 <br>
+                <div class="divmargin">
+                    <select name="Cafe" id="Cafe" class="QTag">
+                        <optgroup label="커피(coffee)">
+                            <option value="아메리카노">아메리카노</option>
+                            <option value="라떼">라뗴</option>
+                            <option value="에스프레소">에스프레소</option>
+                        </optgroup>
+                        <optgroup label="티(tea)">
+                            <option value="자스민티">자스민티</option>
+                            <option value="얼그레이티">얼그레이티</option>
+                        </optgroup>
+                        <optgroup label="전통차">
+                            <option value="인삼차">인삼차</option>
+                            <option value="무슨차">무슨차</option>
+                        </optgroup>
+                    </select>
+                </div>
+                
+            </li><br>
+
+            <li>아래와 같이 만들어 보세요
+                <fieldset class="fieldset">
+                    <legend>Login</legend>
+
+                    <div>
+                        <form action="./test05_result.html">
+                            <label for="id_input_q5">
+                                <span
+                                    style="margin-right: 0.58rem;">ID</span>
+                                <input type="text"
+                                    name="id_input_q5"
+                                    id="id_input_q5"
+                                    placeholder="Press ID"
+                                    required>
+                            </label><br>
+
+                            <label for="pw_input_q5"> PW
+                                <input
+                                    type="password"
+                                    name="pw_input_q5"
+                                    id="pw_input_q5"
+                                    placeholder="Press PW"
+                                    required>
+                            </label><br>
+                            
+                            <Button class="buttonmargin">Login</Button>
+                            <Button>Cancel</Button>
+                        </form>
+                    </div>
+                </fieldset>
+            </li>
+
+            <li>아래와 같이 만들어 보세요
+                <div id="divbox" class="divmargin">
+                    <h1>Front-end Developer Application</h1>
+                    <p>you can apply our company with your HTML, CSS, Javascript skill</p>
+
+                    <hr id="hrset">
+                    
+                    <form action="./test05_result.html">
+
+                        <div class="divmargin">
+                            <b>User Info</b><br>
+
+                            <div class="divmargin inputdiv">
+                                <label for="name_input_q6">
+                                    <span>Name</span>
+                                    <input type="text"
+                                        name="name_input_q6"
+                                        id="name_input_q6"
+                                        placeholder="Input Name"
+                                        required>
+                                </label><br>
+
+                                <label for="tel_input_q6">
+                                    <span
+                                        style="margin-right: 1.3rem;">Tel.</span>
+                                    <input type="tel"
+                                        name="tel_input_q6"
+                                        id="tel_input_q6"
+                                        placeholder="Input Call Number"
+                                        pattern="01[0-1][-]\d{4}[-]\d{4}"
+                                        required>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="divmargin">
+                            <b>Support Areas</b><br>
+
+                            <div class="divmargin inputdiv">
+                                <label for="Sup_input">
+                                    <input type="radio"
+                                        name="Sup_input"
+                                        id="Web Publishing"
+                                        value="Web Publishing">
+                                        <span>Web Publishing</span><br>
+                                    <input type="radio"
+                                        name="Sup_input"
+                                        id="Web Application Dev"
+                                        value="Web Application Dev"> 
+                                        <span>Web Application Dev</span><br>
+                                    <input type="radio"
+                                        name="Sup_input"
+                                        id="Improvement of Dev environment"
+                                        value="Improvement of Dev environment">
+                                        <span>Improvement of Dev environment</span><br>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="divmargin">
+                            <b>Apply Reason</b><br>
+                            <label for="reason_input">
+                                <textarea
+                                    name="Sup_reason_input"
+                                    id="reason_input"
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="write down your apply reason."
+                                    required></textarea>
+                            </label>
+                        </div>
+
+                        <button>Support</button>
+                        <button>write again</button>
+                    </form>
+                </div>
+            </li>
+        </ol>
+    </body>
+</html>

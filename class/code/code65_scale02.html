@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+		}
+		.output {
+			position: relative;
+			float: right;
+			background-color: #fff;
+			width: 40%;
+			box-shadow: 2px 2px 5px -2px rgba(0,0,0,.2);
+			padding: 1em;
+			height: 300px;
+			overflow: hidden;
+		}
+		.output section {
+			height: 100%;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.face {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			backface-visibility: inherit;
+			font-size: 60px;
+			color: #fff;
+		}
+
+        * {
+			box-sizing: border-box;
+		}
+		.output {
+			position: relative;
+			float: right;
+			background-color: #fff;
+			width: 40%;
+			box-shadow: 2px 2px 5px -2px rgba(0,0,0,.2);
+			padding: 1em;
+			height: 300px;
+			overflow: hidden;
+		}
+		.output section {
+			height: 100%;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.face {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			backface-visibility: inherit;
+			font-size: 60px;
+			color: #fff;
+		}
+
+		.front {
+			background: rgba(90,90,90,.7);
+			transform: translateZ(50px);
+		}
+		.back {
+			background: rgba(0,210,0,.7);
+			transform: rotateY(180deg) translateZ(50px);
+		}
+		.right {
+			background: rgba(210,0,0,.7);
+			transform: rotateY(90deg) translateZ(50px);
+		}
+		.left {
+			background: rgba(0,0,210,.7);
+			transform: rotateY(-90deg) translateZ(50px);
+		}
+		.top {
+			background: rgba(210,210,0,.7);
+			transform: rotateX(90deg) translateZ(50px);
+		}
+		.bottom {
+			background: rgba(210,0,210,.7);
+			transform: rotateX(-90deg) translateZ(50px);
+		}
+		#example-element {
+			width: 100px;
+			height: 100px;
+			perspective: 550px;
+			transform-style: preserve-3d;
+		}
+		#default-example {
+			background: linear-gradient(skyblue,khaki);
+			perspective: 800px;
+			perspective-origin: 150% 150%;
+		}
+	</style>
+</head>
+<body>
+	<div id="output" class="output large">
+		<section id="default-example" class="default-example">
+			<div id="example-element" class="transition-all" style="transform: scaleZ(1);">
+				<div class="face front">1</div>
+				<div class="face back">2</div>
+				<div class="face right">3</div>
+				<div class="face left">4</div>
+				<div class="face top">5</div>
+				<div class="face bottom">6</div>
+			</div>
+		</section>
+	</div>
+	<div id="output" class="output large">
+		<section id="default-example" class="default-example">
+			<div id="example-element" class="transition-all" style="transform: scale3d(1.7,1,0.5);">
+				<div class="face front">1</div>
+				<div class="face back">2</div>
+				<div class="face right">3</div>
+				<div class="face left">4</div>
+				<div class="face top">5</div>
+				<div class="face bottom">6</div>
+			</div>
+		</section>
+	</div>
+</body>
+</html>

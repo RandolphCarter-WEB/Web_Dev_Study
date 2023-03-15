@@ -1,0 +1,47 @@
+.divmargin {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.inputdiv {
+    padding-left: 2rem;
+}
+
+.fieldset {
+    padding: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    width: 230px;
+    height: 110px;
+}
+
+.buttonmargin {
+    margin-top: 1rem;
+}
+
+#div-gird {
+    display: grid;
+    grid-template-columns: 60px 300px;
+    grid-template-rows: 60px;
+}
+
+#divbox {
+    padding-left: 2rem;
+
+    border:1px solid black;
+    width: 650px;
+    height: 650px;
+}
+
+#reason_input {
+    margin-top: 1rem;
+    width: 35rem;
+}
+
+#hrset {
+    margin-left: 0;
+
+    text-align: left;
+    width: 37rem;
+}

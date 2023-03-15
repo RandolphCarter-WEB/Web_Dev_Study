@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #list01, #list02, #list03, #list04 {
+                list-style-type: none;
+            }
+            hr {
+                width: 10%;
+                text-align: left;
+                margin-left: 0;
+            }
+            ol {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #table_title {
+                text-align: center;
+            }
+            table, th, td {
+                border: 1px solid gray;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table {
+                width: 50%;
+            }
+            #table02 {
+                width: 10%
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>다음 아래와 같이 리스트를 만들어 보세요. -힌트 : 밑줄은 &lt;hr /&gt;태그로 구현</li>
+        
+            <ul>
+                <li id="list01"><b>Ordered List</b>
+                    <ol type="1">
+                        <li>명사</li>
+                        <li>형용사</li>
+                        <li>동사</li>
+                        <li>부사</li>
+                        <li>관용사</li>
+                    </ol>
+                </li>
+                <hr />
+
+                <li id="list02"><b>Ordered List</b>
+                    <ol type="I">
+                        <li>명사</li>
+                        <li>형용사</li>
+                        <li>동사</li>
+                        <li>부사</li>
+                        <li>관용사</li>
+                    </ol>
+                </li>
+                <hr />
+
+                <li id="list03"><b>Ordered List</b>
+                    <ol type="a">
+                        <li>명사</li>
+                        <li>형용사</li>
+                        <li>동사</li>
+                        <li>부사</li>
+                        <li>관용사</li>
+                    </ol>
+                </li>
+                <hr />
+
+                <li id="list04"><b>Ordered List</b>
+                    <ol start="5">
+                        <li>명사</li>
+                        <li>형용사</li>
+                        <li>동사</li>
+                        <li>부사</li>
+                        <li>관용사</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <li>다음 아래와 같이 리스트를 만들어 보세요</li>
+
+            <ul type="disc">
+                <li><b>방송국</b>
+                    <ol>
+                        <li>KBS</li>
+                        <li>MBC</li>
+                        <li>JTBC</li>
+                        <li>SBS</li>
+                        <li>TV조선</li>
+                    </ol>
+                </li>
+                <li><b>상표</b>
+                    <ol type="i">
+                        <li>나이키</li>
+                        <li>르카프</li>
+                        <li>KSWISS</li>
+                        <li>아디다스</li>
+                        <li>프로스펙스</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <li>다음 아래와 같은 내용을 만들어 보세요
+                <h1>ABC마켓 신입 사원 모집</h1>
+                <p>IT 기획, 편집 부서에서 함께 할 신입 사원을 모집합니다.</p>
+
+                <ul type="disc">
+                    <li>모집 직군 : 편집 기획 부서</li>
+                    <li>직무 내용 : 도서 프로듀싱 업무 (신입 지원 가능)
+                        <ul type="circle">
+                            <li>도서 기획, 편집</li>
+                            <li>도서 홍보, 독자 소통</li>
+                        </ul>
+                    </li>
+                    <li>접수 마감일 : 2016.03.06.</li>
+                </ul>
+                <p>자세한 내용은 공지 게시판을 참고하세요.</p>
+            </li>
+
+            <li>다음 아래와 같은 내용을 만들어 보세요
+                <ul>
+                    <li id="list01">커피 드립 순서 - 아라비아 숫자
+                        <ol>
+                            <li>필터 접기</li>
+                            <li>분쇄</li>
+                            <li>불림</li>
+                            <li>추출</li>
+                        </ol>
+                    </li>
+                    <li id="list02">커피 드립 순서 - 알파벳 소문자
+                        <ol type="a">
+                            <li>필터 접기</li>
+                            <li>분쇄</li>
+                            <li>불림</li>
+                            <li>추출</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+
+            <li>다음 아래와 같은 내용을 만들어 보세요
+                <figure>
+                    <table>
+                        <figcaption id="table_title01"><b>주요 SNS 서비스별 이용률(%)</b></figcaption>
+                        <tr>
+                            <th></th>
+                            <th>페이스북</th>
+                            <th>카카오스토리</th>
+                            <th>밴드</th>
+                            <th>인스타그램</th>
+                            <th>트위터</th>
+                        </tr>
+                        <tr>
+                            <th>2015</th>
+                            <td>77.1</td>
+                            <td>58.3</td>
+                            <td>32.4</td>
+                            <td>16.7</td>
+                            <td>22.1</td>
+                        </tr>
+                        <tr>
+                            <th>2016</th>
+                            <td>73.8</td>
+                            <td>51.0</td>
+                            <td>40.1</td>
+                            <td>28.1</td>
+                            <td>14.7</td>
+                        </tr>
+                    </table>
+                </figure>
+            </li>
+
+            <li>다음 아래와 같은 내용을 만들어 보세요
+                <table id="table02">
+                    <thead>
+                        <tr>
+                            <th>분류</th>
+                            <th>항목</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">과일</td>
+                            <td>바나나</td>
+                        </tr>
+                        <tr>
+                            <td>파인애플</td>
+                        </tr>
+                        <tr>
+                            <td>사과</td>
+                        </tr>
+                        <tr>
+                            <td>오렌지</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">채소</td>
+                            <td>배추</td>
+                        </tr>
+                        <tr>
+                            <td>양파</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ol>
+    </body>
+</html>

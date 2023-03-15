@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            table, tr, td{
+                border : 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table {
+                width: 50%
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1">
+            <p>this is table tag</p>
+            <tr>
+                <th>지역</th> <th>최저 기온</th> <th>최고 기온</th>
+            </tr>
+            <tr>
+                <td>서울</td>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>대구</td>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>광주</td>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>부산</td>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+        </table>
+
+        <p>this is auto make "table>tr*2>td{$}*3"</p>
+        <table>
+            <tr>
+                <th>First</th>
+                <th>Second</th>
+                <th>Third</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <p>this is table Sentence with caption</p>
+        <table>
+            <caption>Table name</caption>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+
+        <p>this is table sentence with figure</p>
+        <figure>
+            <figcaption>this is table title with figcaption</figcaption>
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </figure>
+    </body>
+</html>

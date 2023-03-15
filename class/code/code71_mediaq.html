@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            
+            .div01 {
+                width: 100vw;
+                height: 30px;
+                
+                border: 1px solid #000;
+                /* background-color: red; */
+                
+            }
+
+            @media (min-width:784px) {
+                .div01 {
+                    width: 30vw;
+                    background-color: green;
+                }
+            }
+
+            @media (min-width:1024px) {
+                .div01 {
+                    width: 24vw;
+                    background-color: blue;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div01"></div>
+    </body>
+</html>

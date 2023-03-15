@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../default.css">
+        <title>Document</title>
+
+        <style>
+            .grid_container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: minmax(100px, auto);
+                gap: 1rem;
+            }
+
+            .grid_item:nth-child(1) {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 4;
+            }
+
+            .grid_item:nth-child(5) {
+                grid-area: 4 / 1 / 6 / 3;
+            }
+
+            .grid_item:nth-child(4) {
+                grid-area: 3 / 3 / 6 / 4;
+            }
+
+            .grid_item:nth-child(6) {
+                grid-area: 6 / 1 / 8 / 4;
+            }
+
+            .grid_item:nth-child(13) {
+                grid-area: 10 / 1 / 11 / 4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid_container">
+            <div class="grid_item">TEXT01</div>
+            <div class="grid_item">TEXT02</div>
+            <div class="grid_item">TEXT03</div>
+            <div class="grid_item">TEXT04</div>
+            <div class="grid_item">TEXT05</div>
+            <div class="grid_item">TEXT06</div>
+            <div class="grid_item">TEXT07</div>
+            <div class="grid_item">TEXT08</div>
+            <div class="grid_item">TEXT09</div>
+            <div class="grid_item">TEXT010</div>
+            <div class="grid_item">TEXT011</div>
+            <div class="grid_item">TEXT012</div>
+            <div class="grid_item">TEXT013</div>
+        </div>
+    </body>
+</html>

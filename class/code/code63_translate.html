@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .origin {
+                widows: 170px;
+                height: 128px;
+                border: 1px solid #000;
+                float: left;
+                margin: 40px;
+                padding: 1rem;
+            }
+
+            .movex:hover {
+                transform: translateX(50px);
+            }
+            .movey:hover {
+                transform: translateY(50px);
+            }
+            .movexy:hover {
+                transform: translate(50px, 50px);
+            }
+            .movez:hover {
+                transform: perspective(500px) translateZ(100px);
+            }
+            .move3d:hover {
+                transform: perspective(500px) translate3d(20px, 40px, 100px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="movex"><img src="../image/galic.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="movey"><img src="../image/galic.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="movexy"><img src="../image/galic.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="movez"><img src="../image/galic.jpg" alt=""></div>
+        </div>
+        <div class="origin">
+            <div class="move3d"><img src="../image/galic.jpg" alt=""></div>
+        </div>
+    </body>
+</html>

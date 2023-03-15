@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            :root {
+                --first-company-color : orange;
+                --second-company-color : yellowgreen;
+
+                --basic-font-size : 2rem;
+            }
+
+            p {
+                color: var(--first-company-color);
+                font-size: var(--basic-font-size);
+            }
+
+            p::before {
+                display: inline-block;
+                content: ".";
+                width: 100px;
+
+                background-color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Hello World!</p>
+    </body>
+</html>

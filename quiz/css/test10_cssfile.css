@@ -1,0 +1,89 @@
+ol > li {
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul > li {
+    padding-top: 0.8rem;
+    justify-content: center;
+    text-align: center;
+}
+
+div[class^="item"] {
+    display: table-cell;
+    padding-top: 1.3rem;
+
+    width: 200px;
+    height: 50px;
+
+    text-align: center;
+    justify-content: center;
+
+    border: 1px solid #000;
+}
+
+/* Q1 CSS */
+    .q1_imgdiv {
+        background-image: url(../image/cat_meme.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        width: 250px;
+        height: 150px;
+    }
+
+    .q1_imgdiv:hover {
+        border: 5px solid #000;
+    }
+
+/* Q2 CSS */
+    .q2_menubar {
+        width: 600px;
+        height: 50px;
+
+        border: 1px solid black;
+        border-radius: 4px;
+    }
+
+    .q2_menubar > ul {
+        display: table;
+    }
+
+    .q2_menubar > ul > li {
+        display: table-cell;
+
+        width: 100px;
+        height: 50px;
+    }
+
+    .q2_menubar > ul > li:active {
+        transform: translate(1px, 1px);
+        color: aqua;
+    }
+
+/* Q3 CSS */
+    div[class="item01"] {
+        border-radius: 10px 0px 0px 10px
+    }
+
+    div[class="item04"] {
+        border-radius: 0px 10px 10px 0px
+    }
+
+    .q3_menubar > ul {
+        display: table;
+    }
+
+    .q3_menubar > ul > li {
+        display: table-cell;
+    }
+
+    .q3_menubar > ul > li > div:hover {
+        transform: translate(1px, 1px);
+        background-color: black;
+        color: white;
+    }

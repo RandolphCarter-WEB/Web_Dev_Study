@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../default.css">
+    <title>Document</title>
+    <style>
+        .grid_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+            grid-template-rows: repeat(5, minmax(50px, auto));
+            grid-auto-flow: dense;
+        }
+
+        .grid_item:nth-child(2) {grid-column: auto/span 3 ;}
+        .grid_item:nth-child(5) {grid-column: auto/span 3 ;}
+        .grid_item:nth-child(7) {grid-column: auto/span 2 ;}
+    </style>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="grid_item">TEXT01</div>
+        <div class="grid_item">TEXT02</div>
+        <div class="grid_item">TEXT03</div>
+        <div class="grid_item">TEXT04</div>
+        <div class="grid_item">TEXT05</div>
+        <div class="grid_item">TEXT06</div>
+        <div class="grid_item">TEXT07</div>
+        <div class="grid_item">TEXT08</div>
+        <div class="grid_item">TEXT09</div>
+        <div class="grid_item">TEXT010</div>
+        <div class="grid_item">TEXT011</div>
+        <div class="grid_item">TEXT012</div>
+        <div class="grid_item">TEXT013</div>
+    </div>
+</body>
+</html>

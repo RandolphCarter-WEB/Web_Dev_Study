@@ -1,0 +1,78 @@
+/* Q1 CSS */
+    .q1_divbox {
+        margin: 1.5rem;
+        width: 250px;
+        height: 250px;
+        border: 1px solid #000;
+
+        background-color: blanchedalmond;
+    }
+
+    .q1_divbox:hover {
+        background-color: aqua;
+    }
+
+/* Q2 CSS */
+    .q2_imgbox {
+        margin: 1.5rem;
+
+        background-image: url(../image/cat_meme.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 250px;
+        height: 250px;
+
+        border: 1px solid #000;
+    }
+
+    .q2_imgbox:hover {
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+    }
+
+/* Q3 CSS */
+    .q3_imgbox {
+        margin: 1.5rem;
+
+        background-image: url(../image/cat_meme.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 250px;
+        height: 250px;
+
+        border: 1px solid #000;
+    }
+
+    .q3_imgbox:hover {
+        transform: scale(1.5);
+        transform-origin: 0% 0%;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+        box-shadow: 2px 2px 0 black;
+    }
+
+/* Q4 CSS */
+    div[class^="q4_"] {
+        margin: 1.5rem;
+
+        background-image: url(../image/cat_meme.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        width: 250px;
+        height: 250px;
+
+        border: 1px solid #000;
+    }
+
+    .q4_imgbox01:hover {
+        transform: translateX(-100px);
+    }
+    .q4_imgbox02:hover {
+        transform: translateY(-100px);
+    }
+    .q4_imgbox03:hover {
+        transform: translate(100px, 100px);
+    }

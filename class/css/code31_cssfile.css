@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Nanum Pen Script";
+    src: url("./fonts/NanumPenScript-Regular.ttf");
+}
+
+p {
+    font-size: 2.6rem;
+}
+.p1 {
+    font-family: 'Nanum Pen Script', cursive;
+}
+.p2 {
+    font-family: "궁서";
+}
+.p3 {
+    font-family: "돋움";
+}
+.p4 {
+    font-family: "바탕";
+}
+.p5 {
+    font-family: sans-serif;
+}

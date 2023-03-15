@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .div01 > p:first-child{
+                background-color: yellow;
+            }
+
+            .div01 > p:last-child {
+                background-color: greenyellow;
+            }
+
+            .div02 > p:nth-child(2) {
+                background-color: orange;
+            }
+
+            .div02 > p:nth-of-type(3) {
+                background-color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div01">
+            <p>TEXT01</p>
+            <p>TEXT02</p>
+            <p>TEXT03</p>
+        </div>
+
+        <div class="div02">
+            <p>TEXT01</p>
+            <div>
+                <h1>DIV</h1>
+                <p>TEXT01</p>
+                <p>TEXT02</p>
+            </div>
+            <p>TEXT02</p>
+            <p>TEXT03</p>
+            <p>TEXT04</p>
+            <p>TEXT05</p>
+            <p>TEXT06</p>
+        </div>
+    </body>
+</html>

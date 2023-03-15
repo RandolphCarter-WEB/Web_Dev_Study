@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../default.css">
+        <title>Document</title>
+
+        <style>
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                /* grid-template-rows: repeat(3, 1fr); */
+                /* grid-template-rows: 150px 300px auto; */
+                grid-template-rows: repeat(3, minmax(100px, auto));
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="grid-item">TEXT2</div>
+            <div class="grid-item">TEXT3</div>
+            <div class="grid-item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint doloremque ratione cumque obcaecati, nemo nostrum ducimus tenetur. Deserunt quo veniam eaque quibusdam? Incidunt voluptas est atque aut blanditiis! Odit, facere!</div>
+            <div class="grid-item">TEXT5</div>
+            <div class="grid-item">TEXT6</div>
+            <div class="grid-item">TEXT7</div>
+            <div class="grid-item">TEXT8</div>
+            <div class="grid-item">TEXT9</div>
+        </div>
+    </body>
+</html>

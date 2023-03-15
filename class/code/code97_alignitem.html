@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../default.css">
+        <title>Document</title>
+        <style>
+            .grid_container {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(100px, auto));
+                grid-auto-rows: minmax(200px, auto);
+
+                /* grid cell을 기준으로 정렬 */
+                /* grid에서 세로 배치 */
+                /* align-items: stretch; */
+                /* align-items: start; */
+                /* align-items: end; */
+                /* align-items: center; */
+
+                /* grid에서 가로 배치 */
+                /* justify-items: stretch; */
+                /* justify-items: start; */
+                /* justify-items: end; */
+                /* justify-items: center; */
+
+                /* 세로 가로 배치 */
+                /* grid container 기준으로 정렬 */
+                /* grid container 세로 배치 */
+                /* align-content: stretch; */
+                /* align-content: start; */
+                justify-content: start;
+
+                width: 80vw;
+                height: 80vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid_container">
+            <div class="grid_item">TEXT01</div>
+            <div class="grid_item">TEXT02</div>
+            <div class="grid_item">TEXT03</div>
+            <div class="grid_item">TEXT04</div>
+            <div class="grid_item">TEXT05</div>
+            <div class="grid_item">TEXT06</div>
+            <div class="grid_item">TEXT07</div>
+            <div class="grid_item">TEXT08</div>
+            <div class="grid_item">TEXT09</div>
+            <div class="grid_item">TEXT010</div>
+            <div class="grid_item">TEXT011</div>
+            <div class="grid_item">TEXT012</div>
+            <div class="grid_item">TEXT013</div>
+            <div class="grid_item">TEXT014</div>
+        </div>
+    </body>
+</html>
