@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Edu+NSW+ACT+Foundation:wght@500&family=Kanit:wght@500&family=Raleway:wght@300&display=swap');
+
+:root {
+    --main_font_color: black;
+    --title_font_color: gray;
+    --photographer_font_color: rgb(37, 37, 37);
+    --background_color: white;
+
+    --logo_font: 'Kanit', sans-serif;
+    --main_font: 'Raleway', sans-serif;
+    --img_title_font: 'Edu NSW ACT Foundation', cursive;
+    --img_text_font: 'Barlow', sans-serif;
+
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background_color);
+}
+
+/* HEADER CSS */
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        position: sticky;
+        top: 0;
+
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        width: auto;
+        height: 80px;
+        box-sizing: border-box;
+
+        justify-items: space-between;
+        align-items: center;
+
+        background-color: var(--background_color);
+
+        border-width: 0px 0px 1px 0px;
+        border-color: lightgray;
+        border-style: solid;
+    }
+
+    nav > .Logo {
+        font-family: var(--logo_font);
+        font-size: 2.5rem;
+    }
+
+    .navi {
+        height: 100%;
+
+        text-align: center;
+        font-family: var(--main_font);
+    }
+
+    .navi > ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+
+        margin: 0;
+        padding: 0;
+
+        height: 100%;
+
+        border-width: 0px 0px 3px 0px;
+        border-color: black;
+        border-style: solid;
+    }
+
+    li[class^="navi_"] {
+        padding-top: 25px;
+        height: 100%;
+
+        text-align: center;
+    }
+
+    li[class^="navi_"] > a {
+        height: 100%;
+
+        font-size: 1.8rem;
+        color: black;
+
+        text-decoration: none;
+    }
+
+/* HEADER HOVERING CSS */
+    li[class^="navi_"]:hover {
+        background-color: black;
+
+        border-width: 0px 0px 3px 0px;
+        border-color: white;
+        border-style: solid;
+    }
+
+    li[class^="navi_"]:hover a {
+        color: white;
+        transform: translate(0px, 1px);
+    }
+
+/* main CSS */
+    main {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        margin: 0 auto;
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        width: 90%;
+    }
+
+    /* TOP POST IMG CSS */
+        .top_posts {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .top_img {
+            justify-self: center;
+
+            width: 700px;
+            height: 500px;
+            
+            background-image: url(../../image/Noiceland_photo01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .top_text {
+            padding-top: 4rem;
+        }
+
+        .top_text > .top_categories {
+            color: var(--title_font_color);
+
+            font-family: var(--img_text_font);
+            font-size: 1rem;
+        }
+        .top_text > .top_img_title {
+            margin-top: 2rem ;
+            margin-bottom: 1rem;
+            color: var(--main_font_color);
+            
+            font-family: var(--img_title_font);
+            font-size: 2.5rem;
+        }
+        .top_text > .top_img_text {
+            color: var(--title_font_color);
+            
+            font-family: var(--img_text_font);
+            font-size: 1.3rem;
+        }
+        .top_text > .img_photographer {
+            margin-top: 1.5rem;
+            color: var(--photographer_font_color);
+            
+            font-family: var(--main_font);
+            font-size: 1.3rem;
+        }
+
+    /* TOP POSTS IMG CSS */
+        .top_posts_img {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .top_posts_img > div[class^="top_img_posts"] {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .top_posts_img .top_post_img {
+            justify-self: center;
+
+            width: 400px;
+            height: 400px;
+            
+            background-image: url(../../image/blog-post-01.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .top_post_text > .post_categories {
+            font-family: var(--img_text_font);
+            font-size: 1rem;
+        }
+        .top_post_text > .post_title {
+            margin-top: 1rem ;
+            margin-bottom: 0.7rem;
+            color: var(--main_font_color);
+            
+            font-family: var(--img_title_font);
+            font-size: 1.5rem;
+        }
+        .top_post_text > .post_photographer {
+            color: var(--photographer_font_color);
+            
+            font-family: var(--main_font);
+            font-size: 1rem;
+        }
+
+    /* LASTEST POSTS IMG CSS */
+        .lastest_posts {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .container_title {
+            font-family: var(--img_text_font);
+            color: var(--main_font_color);
+            font-size: 1.5rem;
+        }
+
+        .lastest_posts_img {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .lastest_posts_img > div[class^="lastest_img_post"] {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .lastest_posts_img .lastest_post_img {
+            justify-self: center;
+
+            width: 300px;
+            height: 300px;
+            
+            background-image: url(../../image/blog-post-02.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .lastest_post_text > .post_categories {
+            font-family: var(--img_text_font);
+            font-size: 1rem;
+        }
+        .lastest_post_text > .post_title {
+            margin-top: 1rem ;
+            margin-bottom: 0.7rem;
+            color: var(--main_font_color);
+            
+            font-family: var(--img_title_font);
+            font-size: 1.5rem;
+        }
+        .lastest_post_text > .post_photographer {
+            color: var(--photographer_font_color);
+            
+            font-family: var(--main_font);
+            font-size: 1rem;
+        }
+
+    /* FEATURED POSTS IMG CSS */
+        .featured_posts {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .featured_posts_img {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .featured_posts_img > div[class^="featured_img_post"] {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .featured_posts_img .featured_post_img {
+            justify-self: center;
+
+            width: 500px;
+            height: 500px;
+            
+            background-image: url(../../image/blog-post-03.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .featured_post_text > .post_categories {
+            font-family: var(--img_text_font);
+            font-size: 1rem;
+        }
+        .featured_post_text > .post_title {
+            margin-top: 1rem ;
+            margin-bottom: 0.7rem;
+            color: var(--main_font_color);
+            
+            font-family: var(--img_title_font);
+            font-size: 1.5rem;
+        }
+        .featured_post_text > .post_photographer {
+            color: var(--photographer_font_color);
+            
+            font-family: var(--main_font);
+            font-size: 1rem;
+        }
+
+/* footer CSS */
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        padding: 3rem 5rem;
+
+        box-sizing: border-box;
+        background-color: rgba(0, 0, 0, 0.815);
+    }
+
+    .container_footer {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* FOOTER TOP CSS */
+        .top_footer {
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+
+            margin-bottom: 5rem;
+        }
+        .footer_logo {
+            font-family: var(--logo_font);
+            font-size: 3.5rem;
+
+            color: white;
+        }
+        .footer_copyright {
+            align-self: end;
+
+            color: lightgray;
+        }
+    /* FOOTER MIDDLE CSS */
+        .middle_footer {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1rem;
+        }
+        
+        p[class="footer_side"] {
+            color: lightgray;
+            font-size: 1.3rem;
+        }
+
+        .footer_side_categories ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            padding: 1rem 0rem;
+
+            font-size: 1.3rem;
+            line-height: 2rem;
+        }
+        .footer_side_categories ul li {
+            color: white;
+        }
+
+        .footer_side_email_form {
+            display: flex;
+            flex-direction: row;
+        }
+        #footer_email_field {
+            margin: 1rem 0rem;
+
+            width: 300px;
+            height: 35px;
+        }
+
+        .footer_email_button {
+            margin: 1rem 0rem;
+
+            width: 100px;
+            height: 40px;
+
+            background-color: black;
+            color: white;
+        }
