@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* ------------------------------------------head-------------*/
+.header {
+	margin: 0;
+	padding: 0 16 0 12px;
+}
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px 15px;
+  overflow: hidden;
+  background-color: white;
+}
+.header li a {
+	float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+}
+.header li a:hover {
+	background-color: Mediumseagreen;
+	color: white;
+}
+.header span {
+	text-align: center;
+	padding: 2px 8px;
+	background-color: white; color: black
+}
+#login {
+	float: right;	display: block;
+	text-align: center;
+	border-radius: 30px;
+	margin: 15px 10px;
+	background-color: rgb(4, 170, 109); 
+	color: white; padding: 10px 18px;
+}
+#website {
+	float: right;	display: block;
+	text-align: center;
+	padding: 10px 13px;color: black;
+	border-radius: 30px;
+	margin: 15px 10px;
+	background-color:pink;
+}
+#paid {
+	float: right;	display: block;
+	text-align: center;
+	padding: 10px 13px;color: black;
+	border-radius: 30px;
+	margin: 15px 10px;
+}
+#login:hover{
+	background-color: rgb(49, 141, 91);
+}
+#paid:hover {
+	background-color: Mediumseagreen;
+	color: white;
+}
+#website:hover {
+	background-color: Mediumseagreen;
+	color: white;
+}
+
+/*-----------------------------------------------topnav------------------------*/
+#icon {
+	list-style-type: none;
+  margin: 0;
+  padding: 10px 12px 0px 5px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav {   /* Style the top navigation bar */
+  overflow: hidden;
+  background-color: #333;
+	position: sticky;
+	top: 0px;
+}
+
+.topnav a {   /* Style the topnav links */
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {  /* Change color on hover */
+  background-color: black;
+  color: white;
+}
+
+.active {
+	background-color: Mediumseagreen;
+	color: white;
+}
+#topnavR{
+	float: right;
+	display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px 0px;
+  text-decoration: none;
+}
+#topnavL{
+	padding: 10px 14px 0px;
+}
+
+/*-----------------------------------------------column------------------------*/
+.column {
+  float: left;
+}
+
+.column.left {
+	background-color: rgb(221, 221, 221);
+	height: 100%;
+	position: sticky;
+	top: 45px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 890px;
+}
+
+.column.middle {
+  width: 70%;
+	padding: 0px 30px 0px 31px;
+	height: 100%;
+	position: static;
+}
+.column.right {
+  width: 16%;
+	margin: 0px 0px 0px 10px;
+	background-color: beige;
+	text-align: center;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column.left, .column.middle, .column.right {
+    width: 100%;
+  }
+}
+/*-------------------------------------column_l-----------------------*/
+
+.column.left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+	
+}
+
+.column.left li a {
+  display: block;
+  color: #000;
+  padding: 3px 16px;
+  text-decoration: none;
+	background-color: rgb(228, 229, 230);
+	font-size: 15px;
+
+}
+
+.column.left li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.column.left li a:hover:not(.active) {
+  background-color: rgb(190, 190, 190);
+  color: black;
+}
+#title:hover {
+	background-color: rgb(221, 221, 221);
+}
+/*-------------------------------------column_middle-----------------------*/
+
+.column.middle ul {
+  list-style-type: none;
+  margin: 0;
+	margin: 0px;
+	padding: 0px;
+  overflow: hidden;
+}
+.column.middle li a {
+	float: left;
+  display: block;
+	background-color: mediumseagreen;
+  color: white;
+	border-radius: 8px;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+	font-size: 17px;
+}
+.column.middle li a:hover{
+	background-color: rgb(49, 141, 91);
+}
+#next {
+	float: right;
+}
+#next:hover{
+	background-color: rgb(49, 141, 91);
+}
+
+#Green {
+	background-color: #D9EEE1;
+	margin: 20px -32px 0px -32px;
+	padding: 30px 20px 20px 20px;
+	width: 105%;
+}
+#b1 {
+	float: none;
+	text-align: left;
+	width: 24.5%;
+	background-color: #04AA6D;
+	padding: 10px 20px 12px;
+}
+#b1:hover {
+	background-color: rgb(49, 141, 91);
+}
+#b2 {
+	float: none;
+	text-align: left;
+	width: 22%;
+	background-color: #282A35;
+	padding: 10px 20px 10px;
+}
+#b2:hover{
+	background-color: black;
+}
+.example {
+	background-color: rgb(221, 221, 221);
+	border-radius: 5px;
+	margin: 20px -12px 0px -12px;
+	padding: 5px 20px 20px 20px;
+		
+}
+#exampleTry {
+	padding: 10px 20px 10px;
+	width: 14%;
+	font-size: 15px;
+	margin: 0px 0px 5px;
+}	
+#Hexam {
+	padding: 7px 13px;
+	width: 17%;
+	font-size: 15px;
+	margin: 0px 0px 5px;
+	background-color: rgb(221, 221, 221);
+	color: black;
+}	
+#Hexam:hover {
+	background-color: rgb(49, 141, 91);
+	color: white;
+}
+.Exercises {
+	background-color: #282A35;
+	border-radius: 5px;
+	margin: 20px -12px 0px -12px;
+	padding: 5px 20px 20px 20px;
+		
+}
+#ExercisesTry {
+	padding: 10px 20px 10px;
+	width: 14%;
+	font-size: 15px;
+	margin: 0px 0px 5px;
+}	
+#exercise{
+	background-color: white;
+	padding: 0px 0px 0px 10px;
+}
+.input {
+	background-color: rgb(229, 229, 229);
+	font-size: 17px;
+	padding: 5px 5px;
+	margin: 0px 10px 10px;
+}
+#submitA {
+	padding: 10px 20px 10px;
+	width: 15%;
+	font-size: 15px;
+	margin: 5px 10px 10px;
+}
+#Quiz {
+	background-color: #2196F3;
+	color: white;
+	padding: 10px 15px 10px;
+	width: 13%;
+	font-size: 15px;
+}
+#Quiz:hover {
+	background-color: rgb(33, 137, 221);
+}
+
+#ref {
+	padding: 20px 15px;
+	width: 31%;
+	font-size: 16px;
+	margin: 10px 10px 10px;
+	background-color: #E7E9EB;
+	color: black;
+}	
+#ref:hover {
+	background-color: black;
+	color: white;
+}
+.last {
+	background-color: #282A35;
+	border-radius: 20px;
+	margin: 20px -12px 0px -12px;
+	padding: 5px 20px 20px 20px;
+}
+.last p {
+	color: pink;
+	padding: 0px 0px 0px 30px;
+}
+#lastB {
+	width: 15%;
+	border-radius: 50px;
+	margin: 20px 0 0 30px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+	<ul>
+		<li><a href="#" id="icon"><img src="icon.PNG" alt="icon" style="width: 58px; height: 55px;"></a></li>
+		<li><a href="#"><b>Tutorials▼</b></a></li>
+		<li><a href="#"><b>References▼</b></a></li>
+		<li><a href="#"><b>Exercises▼</b></a></li>
+		<li><a href="#"><b>Videos</b></a></li>
+		<li><a href="#"><b>Pro <span style="font-size: 10px;border: 1px solid black; border-radius: 10px;">NEW</span></b></a></li>
+		<li><a href="#" id= "login"><b>&nbsp;&nbsp;Log in&nbsp;&nbsp;</b></a></li>
+		<li><a href="#" id= "paid"><b>Paid Courses</b></a></li>
+		<li><a href="#" id= "website"><b>Website</b> <span style="font-size: 10px;border: 1px solid black; border-radius: 10px;"><b>NEW</b></span></a></li>
+	</ul>
+</div>
+  
+<div class="topnav">
+	<a href="#" id="topnavL"><img src="home.PNG" alt="home" style="width: 25px; height: 25px;"></a>
+	<a class= "active" href="#"><b>HTML</b></a>
+	<a href="#"><b>CSS</b></a>
+	<a href="#"><b>JAVASCRIPT</b></a>
+	<a href="#"><b>SQL</b></a>
+	<a href="#"><b>PYTHON</b></a>
+	<a href="#"><b>PHP</b></a>
+	<a href="#"><b>BOOTSTRAP</b></a>
+	<a href="#"><b>HOW TO</b></a>
+	<a href="#"><b>W3.CSS</b></a>
+	<a href="#"><b>JAVA</b></a>
+	<a href="#"><b>JQUERY</b></a>
+	<a href="#"><b>C</b></a>
+	<a href="#"><b>C++</b></a>
+	<a href="#"><b>C#</b></a>
+	<a href="#"><b>R</b></a>
+	<a href="#"><b>React</b></a>
+	<a href="#" id="topnavR"><img src="mag_glass.PNG" alt="mag_glass" style="width: 25px; height: 25px;"></a>
+	<a href="#" id="topnavR"><img src="earth.PNG" alt="earth" style="width: 25px; height: 25px;"></a>
+	<a href="#" id="topnavR"><img src="mode.PNG" alt="mode-change" style="width: 25px; height: 25px;"></a>
+</div>
+
+<div class="row">
+		<div class="column left">
+			<ul>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 16px;">HTML Tutorial</a></li>
+					<li><a class="active">HTML HOME</a></li>
+					<li><a href="#">HTML Introduction</a></li>
+					<li><a href="#">HTML Editors</a></li>
+					<li><a href="#">HTML Basic</a></li>
+					<li><a href="#">HTML Elements</a></li>
+					<li><a href="#">HTML Attributes</a></li>
+					<li><a href="#">HTML Headings</a></li>
+					<li><a href="#">HTML Paragraphs</a></li>
+					<li><a href="#">HTML Styles</a></li>
+					<li><a href="#">HTML Formatting</a></li>
+					<li><a href="#">HTML Quotations</a></li>
+					<li><a href="#">HTML Comments</a></li>
+					<li><a href="#">HTML Colors</a></li>
+					<li><a href="#">HTML CSS</a></li>
+					<li><a href="#">HTML Links</a></li>
+					<li><a href="#">HTML Images</a></li>
+					<li><a href="#">HTML Favicon</a></li>
+					<li><a href="#">HTML Tables</a></li>
+					<li><a href="#">HTML Lists</a></li>
+					<li><a href="#">HTML Block & Inline</a></li>
+					<li><a href="#">HTML Classes</a></li>
+					<li><a href="#">HTML Id</a></li>
+					<li><a href="#">HTML Iframes</a></li>
+					<li><a href="#">HTML JavaScript</a></li>
+					<li><a href="#">HTML File Paths</a></li>
+					<li><a href="#">HTML Head</a></li>
+					<li><a href="#">HTML Layout</a></li>
+					<li><a href="#">HTML Responsive</a></li>
+					<li><a href="#">HTML Computercode</a></li>
+					<li><a href="#">HTML Semantics</a></li>
+					<li><a href="#">HTML Style Guide</a></li>
+					<li><a href="#">HTML Entities</a></li>
+					<li><a href="#">HTML Symbols</a></li>
+					<li><a href="#">HTML Emojis</a></li>
+					<li><a href="#">HTML Charset</a></li>
+					<li><a href="#">HTML URL Encode</a></li>
+					<li><a href="#">HTML vs. XHTML</a></li>
+					<li><a href="#"> </a></li> <li><a href="#"> </a></li>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 16px;">HTML Forms</a></li>
+					<li><a href="#">HTML Forms</a></li>
+					<li><a href="#">HTML Forms Attributes</a></li>
+					<li><a href="#">HTML Form Elements</a></li>
+					<li><a href="#">HTML Input Types</a></li>
+					<li><a href="#">HTML Input Attributes</a></li>
+					<li><a href="#">HTML Input Form Attributes</a></li>
+					<li><a href="#"> </a></li> <li><a href="#"> </a></li>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 16px;">HTML Graphics</a></li>
+					<li><a href="#">HTML Canvas</a></li>
+					<li><a href="#">HTML SVG</a></li>
+					<li><a href="#"> </a></li> <li><a href="#"> </a></li>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 16px;">HTML Media</a></li>
+					<li><a href="#">HTML Media</a></li>
+					<li><a href="#">HTML Video</a></li>
+					<li><a href="#">HTML Audio</a></li>
+					<li><a href="#">HTML Plug-ins</a></li>
+					<li><a href="#">HTML YouTube</a></li>
+					<li><a href="#"> </a></li> <li><a href="#"> </a></li>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 16px;">HTML APls</a></li>
+					<li><a href="#">HTML Geolocation</a></li>
+					<li><a href="#">HTML Drag/Drop</a></li>
+					<li><a href="#">HTML Web Storage</a></li>
+					<li><a href="#">HTML Web Workers</a></li>
+					<li><a href="#">HTML SSE</a></li>
+					<li><a href="#"> </a></li> <li><a href="#"> </a></li>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 16px;">HTML Examples</a></li>
+					<li><a href="#">HTML Examples</a></li>
+					<li><a href="#">HTML Quiz</a></li>
+					<li><a href="#">HTML Exercises</a></li>
+					<li><a href="#">HTML Certificate</a></li>
+					<li><a href="#">HTML Summary</a></li>
+					<li><a href="#">HTML Accessibility</a></li>
+					<li><a href="#"> </a></li> <li><a href="#"> </a></li>
+					<li><a href="#" id="title" style="font-size: 1.3em; padding: 12px 5px 5px 11px;">HTML References</a></li>
+					<li><a href="#">HTML Tag List</a></li>
+					<li><a href="#">HTML Attributes</a></li>
+					<li><a href="#">HTML Global Attributes</a></li>
+					<li><a href="#">HTML Browser Support</a></li>
+					<li><a href="#">HTML Events</a></li>
+					<li><a href="#">HTML Colors</a></li>
+					<li><a href="#">HTML Canvas</a></li>
+					<li><a href="#">HTML Audio/Video</a></li>
+					<li><a href="#">HTML Doctypes</a></li>
+					<li><a href="#">HTML Character Sets</a></li>
+					<li><a href="#">HTML URL Encode</a></li>
+					<li><a href="#">HTML Lang Codes</a></li>
+					<li><a href="#">HTML Messages</a></li>
+					<li><a href="#">HTML Methods</a></li>
+					<li><a href="#">PX to EM Converter</a></li>
+					<li><a href="#">Keyboard Shortcuts</a></li>
+				</ul>
+		</div>
+		
+		<div class="column middle">
+			<p style="font-size: 40px; margin: 1em 0em 0.5em;">HTML Tutorial</p>
+			<div class="homenext">
+				<ul>
+					<li><a href="#"><b>< Home</b></a></li>
+					<li><a href="#" id="next"><b>Next ></b></a></li>
+				</ul>
+			</div>
+			<div id="Green">
+					<p>HTML is the standard markup language for Web pages.</p>
+					<p>With HTML you can create your own Website.</p>
+					<p>HTML is easy to learn - You will enjoy it</p>
+					<ul>
+						<li><a href="#" id="b1"><b>Study our free HTML Tutorial >></b></a></li>
+						<br>
+						<li><a href="#" id="b2"><b>Watch our Video Tutorial >></b></a></li>
+					</ul>
+					<br>
+			</div>
+			<hr style="margin: 30px 0px; border-top: 1px solid #eee;">
+			<p style="font-size: 30px;">Easy Learning with HTML "Try it Yourself"</p>
+			<p>With our "Try it Yourself" editor, you can edit the HTML code and view the result:</p>
+			<div class="example">
+				<p style="font-size: 24px;">Example</p>
+				<xmp style="background-color: black; color: white; font-size: 15px;">
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <title>Page Title</title>
+ </head>
+ <body>
+
+ <h1>This is a Heading</h1>
+ <p>This is a paragraph.</p>
+
+ </body>
+ </html>
+				</xmp>
+				<ul><li><a href="#" id="exampleTry"><b>Try it Yourself>></b></a></li></ul>
+			</div>
+			<p style="font-size: 18px;"><b>Click on the "Try it Yourself" button to see how it works.</b></p>
+			<hr style="margin: 20px 0px; border-top: 1px solid #eee;">
+			<p style="font-size: 30px;">HTML Examples</p>
+			<p>In this HTML tutorial, you will find more than 200 examples. 
+				With our online "Try it Yourself" editor, you can edit and test each example yourself!</p>
+			<ul><li><a href="#" id="Hexam"><b>Go to HTML Examples!</b></a></li></ul>
+			<hr style="margin: 20px 0px; border-top: 1px solid #eee;">
+			<p style="font-size: 30px;">HTML Exercises</p>
+			<p>This HTML tutorial also contains nearly 100 HTML exercises.</p>
+			<div class="Exercises">
+				<p style="font-size: 30px; color: white;">Test Yourself With Exercises</p>
+				<div id="exercise">
+						<p style="font-size: 30px; padding: 30px 0px 0px 0px;">Exercise:</p>
+						<p>Add a "tooltip" to the paragraph below with the text "About W3Schools".</p>
+						<div class="input">
+							<p>< p <input type="text" style="width:5%; border: 0px;">="About W3Schools">W3Schools is a web developer's site.</p> </p>	</div>
+						<ul><li><a href="#" id="submitA"><b>Submit Answer>></b></a></li></ul>
+						<br>
+						<a href="#" style="margin: 5px 10px 10px;">Start the Exercise</a>
+						<br><br>
+				</div>
+			</div>
+			<hr style="margin: 20px 0px; border-top: 1px solid #eee;">
+			<p style="font-size: 30px;">HTML Quiz Test</p>
+			<p>Test your HTML skills with our HTML Quiz!</p>
+			<ul><li><a href="#" id="Quiz"><b>Start HTML Quiz!</b></a></li></ul>
+			<hr style="margin: 20px 0px; border-top: 1px solid #eee;">
+			<p style="font-size: 30px;">HTML References</p>
+			<p>
+				At W3Schools you will find complete references about HTML elements, 
+				attributes, events, color names, entities, character-sets, URL encoding, 
+				language codes, HTTP messages, browser support, and more:
+			</p>
+			<ul>
+				<li><a href="#" id="ref">HTML Elements</a></li>
+				<li><a href="#" id="ref">Browser Support</a></li>
+				<li><a href="#" id="ref">Attributes</a></li>
+				<li><a href="#" id="ref">Global Attributes</a></li>
+				<li><a href="#" id="ref">Event Attributes</a></li>
+				<li><a href="#" id="ref">Color Names</a></li>
+				<li><a href="#" id="ref">Canvas</a></li>
+				<li><a href="#" id="ref">Audio/Video DOM</a></li>
+				<li><a href="#" id="ref">Character Sets</a></li>
+				<li><a href="#" id="ref">URL Encoding</a></li>
+				<li><a href="#" id="ref">Language Codes</a></li>
+				<li><a href="#" id="ref">Country Codes</a></li>
+				<li><a href="#" id="ref">HTTP Messages</a></li>
+				<li><a href="#" id="ref">Px to Em Converter</a></li>
+				<li><a href="#" id="ref">Keyboard Shortcuts</a></li>
+			</ul>
+			<br>
+			<div class="last">
+					<p style="font-size: 50px;"><b>Kickstart your career</b></p>
+					<p style="font-size: 38px;"><b>Get certified by completing the HTML course</b></p>
+					<ul><li><a href="#" id="lastB"><b>Get certified</b></a></li></ul>
+					<br>
+			</div>
+			<br>
+			<br>
+			<div class="homenext">
+					<ul>
+						<li><a href="#"><b>< Home</b></a></li>
+						<li><a href="#" id="next"><b>Next ></b></a></li>
+					</ul>
+				</div>
+			<br><br><br>
+			<hr style="margin: 20px 0px; border-top: 1px solid #eee;">
+			<br>
+		</div>
+
+		<div class="column right">
+			<p>contents</p>
+			<p>광고자리 영역만 보이게</p>
+			<p>background-color를 지정했습니다.</p>
+		</div>
+</div>
+
+</body>
+</html>
