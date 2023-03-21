@@ -12,6 +12,9 @@
     --img_text_font: 'Barlow', sans-serif;
 
 }
+* {
+    box-sizing: border-box;
+}
 
 .main_container {
     display: flex;
@@ -117,7 +120,7 @@
         padding-top: 3rem;
         padding-bottom: 3rem;
 
-        width: 90%;
+        width: 90vw;
     }
 
     /* TOP POST IMG CSS */
