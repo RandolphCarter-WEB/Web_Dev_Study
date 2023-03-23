@@ -38,6 +38,7 @@
     header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
 
         padding: 0 5rem;
 
@@ -74,9 +75,13 @@
         justify-content: end;
     }
 
+    .header_navi li {
+        display: flex;
+        align-items: center;
+    }
+
     /* TODO : li flex 먹이고 중앙 정렬 하기*/
     .header_navi li a {
-        padding-top: 30px;
 
         text-decoration: none;
 
@@ -89,6 +94,7 @@
     .top_section {
         display: flex;
         flex-direction: column;
+        gap: 3rem;
 
         width: auto;
         height: 60vh;
@@ -161,6 +167,35 @@
         align-self: flex-end;
         width: 400px;
         height: 300px;
+
+        border: 1px solid #000;
+    }
+
+    .top_section_cooperation {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        padding: 1rem 5rem;
+
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .top_section_cooperation_title {
+        color: lightgray;
+        letter-spacing: 0.5rem;
+    }
+
+    .top_section_cooperation_company {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    div[class^="top_section_cooperation_company0"] {
+        width: 100px;
+        height: 100px;
 
         border: 1px solid #000;
     }
