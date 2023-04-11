@@ -11,7 +11,7 @@ customElements.define('my-paragraph',
   }
 );
 
-// const slottedSpan = document.querySelector('my-paragraph span');
+const slottedSpan = document.querySelector('my-paragraph span');
 
-// console.log(slottedSpan.assignedSlot);
-// console.log(slottedSpan.slot);
+console.log(slottedSpan.assignedSlot);
+console.log(slottedSpan.slot);
