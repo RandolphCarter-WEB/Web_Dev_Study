@@ -1,4 +1,4 @@
-class CustomNavHeader extends HTMLElement {
+export default class CustomNavHeader extends HTMLElement {
     constructor() {
         super();
 
