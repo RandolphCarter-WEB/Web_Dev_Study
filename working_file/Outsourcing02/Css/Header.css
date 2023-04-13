@@ -1,0 +1,18 @@
+:root {
+    --MainColor : aqua;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+}
+
+.naviHeader {
+    display: flex;
+    gap: 3rem;
+
+    padding: 1rem;
+    justify-content: center;
+
+    background-color: var(--MainColor); /*대체 무엇;;;;;*/
+}
