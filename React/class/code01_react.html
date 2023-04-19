@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script type="text/babel">
+            // JAVASCRIPT
+            // const h1 = document.createElement("h1");
+            // h1.textContent = "Hello React";
+            // app.append(h1);
+
+            //REACT PASS
+            // class App extends React.Component {
+            //     constructor() {
+            //         super();
+            //     }
+
+            //     render() {
+            //         return (
+            //             <h1>Hello! React!</h1>
+            //         );
+            //     }
+            // }
+            
+            //REACT NOW
+            function App() {
+                return (
+                    <h1>Hello React</h1>
+                )
+            }
+            
+            ReactDOM.render(<App />, app);
+        </script>
+    </body>
+</html>

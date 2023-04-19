@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script type="text/babel">
+            function App() {
+                const liList = {
+                    li01: "First Sentence.",
+                    li02: "Second Sentence.",
+                    li03: "Third Sentence.",
+                    li04: "fourth Sentence.",
+                    li05: "sixth Sentence.",
+                    li06: "seventh Sentence."
+                };
+
+                const listItems = Object.keys(liList).map((key) => (
+                    <li id={key}>{liList[key]}</li>
+                ));
+
+                function LCustom() { return (<ul>{listItems}</ul>) }
+
+                return (
+                    <div>
+                        <LCustom></LCustom>
+                        <LCustom></LCustom>
+                    </div>
+                );
+            }
+
+            ReactDOM.render(<App />, document.getElementById("app"));
+        </script>
+    </body>
+</html>
