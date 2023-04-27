@@ -1,5 +1,5 @@
 import gameData from "./data/data.js"
-import {QuestionUI, HangmanUI, keyboardBtn} from "./component/component.js";
+import { QuestionUI, HangmanUI, keyboardBtn } from "./component/component.js";
 import { isIncludes, isWin, isLose, showHint, canvas, animate } from "./event/event.js";
 
 class App {
@@ -51,8 +51,8 @@ class App {
             <div id="gameUI"></div>
             <div id="keyUI"></div>
             <div id="userUI">
-                <button id="showHintBtn">Hint</button>
-                <button id="resetBtn">Reset</button>
+                <button id="showHintBtn" class="key">Hint</button>
+                <button id="resetBtn" class="key">Reset</button>
             </div>
         `;
     }
@@ -62,25 +62,29 @@ class App {
 
         keyBtns.forEach(Btn => {
             Btn.addEventListener("click", (e) => {
-                if(isIncludes(this.userAnswer, e.target.dataset.key, this.answer) == 0) {
+                if(isIncludes(e.target.dataset.key, this) == 0) {
                     this.userHP--;
                     animate(stickman, this.userHP);
                 }
 
                 e.target.disabled = "true";
                 questionDiv.innerHTML = QuestionUI(this.randomData, this.userHP, this.userAnswer);
-                console.log(this.userHP);
+
                 if(this.userHP == 0) {
                     userLife.innerHTML = isLose();
                 } else {
-                    userLife.innerHTML = isWin(this.answer, this.userAnswer) == 0
+                    const winInfo = isWin(this);
+                    userLife.innerHTML = (winInfo == 0)
                         ? userLife.innerHTML
-                        : isWin(this.answer, this.userAnswer);
+                        : winInfo;
                 }
             });
         });
 
-        document.querySelector("#showHintBtn").addEventListener("click", showHint);
+        document.querySelector("#showHintBtn").addEventListener("click", () => {
+            const hint = document.querySelector("#hint");
+            showHint(hint)
+        });
         document.querySelector("#resetBtn").addEventListener("click", () => { location.reload(true); });
     }
 }

@@ -4,7 +4,7 @@ export function keyboardBtn() {
     const render = () => {
         return `
             ${item.map(element => {
-                return `<button id=${element+"Key"} data-key="${element}">${element}</button>`
+                return `<button id=${element+"Key"} class="key" data-key="${element}">${element}</button>`
             }).join("\n")}
         `;
     }
@@ -30,7 +30,7 @@ export function QuestionUI([question, answer, hint], life, userAnswer) {
             <h3 id="questionTitle">${question}</h3>
             <p id="userAnswer">${answerUI.join("")}</p>
             <p id="userLife">You have ${life} lives!</p>
-            <p id="hintTitle">Clue - <span id="hint">${hint}</span></p>
+            <p id="hintTitle">Clue - <span id="hint" style="opacity: 0">${hint}</span></p>
         `;
     }
 

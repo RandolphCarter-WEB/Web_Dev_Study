@@ -19,10 +19,10 @@ a { text-decoration: none; color: var(--yellowColor); }
     flex-direction: column;
 
     width: 100svw;
-    height: auto;
+    height: 100%;
 
     background-color: var(--yellowColor);
-}
+}z
 
 nav {
     position: sticky;

@@ -1,0 +1,13 @@
+.ComponentDiv {
+    border: 1px solid #000;
+}
+
+.ComponentDiv:hover {
+    background-color: black;
+    color: white;
+}
+
+.color {
+    background-color: burlywood;
+    color: brown;
+}

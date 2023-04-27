@@ -1,11 +1,15 @@
+body {
+    box-sizing: border-box;
+}
+
 #mainContainer {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 
-    padding: 3rem;
+    padding: 3rem 5rem;
 
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     justify-content: center;
@@ -16,8 +20,71 @@
     color: #fff;
 }
 
+.test {
+    height: 100vh;
+}
+
 #gameTitle {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+#gameTitle h1 {
+    font-size: 4rem;
+    letter-spacing: 1rem;
+}
+#gameTitle h3 { font-size: 2rem; }
+#gameTitle p { font-size: 1.5rem; }
+
+#questionDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#questionDiv h3 { font-size: 2rem; }
+#questionDiv p { font-size: 1.5rem; }
+
+#gameUI {
+    padding: 1rem;
+    width: 25rem;
+    height: auto;
+
+    border: 2px dotted #fff;
+}
+
+#keyUI {
+    display: flex;
+    gap: 1rem;
+
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.key {
+    width: 3rem;
+    height: 3rem;
+
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 0.2rem;
+
+    color: #fff ;
+}
+.key:hover {
+    background-color: #fff;
+    color: yellowgreen;
+}
+
+#keyUI button:disabled {
+    background-color: #fff;
+    color: yellowgreen;
+}
+
+#userUI {
+    display: flex;
+    gap: 2rem
+}
+
+#showHintBtn, #resetBtn  {
+    width: 10rem;
 }
