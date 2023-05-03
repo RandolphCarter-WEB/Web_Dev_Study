@@ -80,7 +80,6 @@
         align-items: center;
     }
 
-    /* TODO : li flex 먹이고 중앙 정렬 하기*/
     .header_navi li a {
 
         text-decoration: none;

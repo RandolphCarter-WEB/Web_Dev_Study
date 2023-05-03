@@ -22,7 +22,6 @@ class App {
         ]
         this.answer = [ ... new Set(this.randomData[1].filter(element => !(element == '-')))];
 
-        //TODO:DELELETE SHOW ANSWER
         console.log(this.answer);
 
         this.userHP = 10;
