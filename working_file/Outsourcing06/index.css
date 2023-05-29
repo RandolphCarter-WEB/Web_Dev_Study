@@ -1,5 +1,6 @@
 body {
     box-sizing: border-box;
+    background-color: black;
 }
 
 h1 {
@@ -20,6 +21,10 @@ td, th {
 
 tr:nth-child(even){
     background-color: #f2f2f2;
+}
+
+tr:nth-child(odd){
+    background-color: #fff;
 }
 
 tr:hover {
@@ -44,15 +49,20 @@ th {
 #header {
     display: flex;
 
+    justify-content: center;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
     width: 100vw;
     height: 50vh;
+
+    opacity: 0.7;
 }
 
 #headerTitle {
-    text-align: center;
-    align-items: flex-end;
-}
+     align-self: end;
+     font-size: 5rem;
+     color: #fff;
+ }
