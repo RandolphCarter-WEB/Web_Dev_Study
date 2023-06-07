@@ -1,0 +1,34 @@
+.empty__todoBx {
+  text-align: center;
+  padding: 0px 25px;
+}
+
+.empty__todoBx__image__wrapper {
+  max-width: 450px;
+  min-width: 50px;
+  margin: 30px auto 0px;
+  overflow: hidden;
+}
+
+.empty__todoBx__image {
+  width: 100%;
+}
+
+.empty__todoBx__desc {
+  font-size: 22px;
+  color: var(--white);
+  text-align: center;
+  margin: 15px 0px 0px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 290px) {
+  .empty__todoBx__desc {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .empty__todoBx__desc {
+    font-size: 17px;
+  }
+}

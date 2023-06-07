@@ -1,0 +1,17 @@
+.link {
+  text-decoration: none;
+}
+
+.no__page__found__image__box {
+  margin: 0px auto;
+  padding: 0px;
+  max-width: 90%;
+  overflow: hidden;
+}
+
+.no__page__found__image__box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

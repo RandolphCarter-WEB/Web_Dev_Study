@@ -1,0 +1,59 @@
+.App {
+  background-color: var(--dark);
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px 100px;
+  overflow: hidden;
+}
+
+.wrapper {
+  padding: 10px 0px;
+}
+
+.box {
+  background-color: var(--dark);
+  max-width: 600px;
+  min-width: 100px;
+  margin: 0px auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.action__box {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.link > button {
+  width: 100%;
+}
+
+.link {
+  text-decoration: none;
+  flex: 1;
+}
+
+@media screen and (min-width: 0px) and (max-width: 290px) {
+  .App {
+    padding: 20px 5px !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+  .App {
+    padding: 20px 10px;
+  }
+  .wrapper {
+    padding: 0px 5px;
+  }
+  .box {
+    padding: 10px 0px;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  .App {
+    padding: 50px 30px;
+  }
+}

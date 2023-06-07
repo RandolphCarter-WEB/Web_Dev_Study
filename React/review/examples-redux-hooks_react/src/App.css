@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+
+}
+body{
+  background-color: #282c34;
+  width: 100%;
+}
+.App {
+  text-align: center;
+}
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+h3{
+  text-decoration: underline white;        
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+li{
+  list-style-type: none;
+  padding: 5px;
+  border:1px solid gray;
+  width: 20%
+}
+a{
+  text-decoration: none;
+  color:white
+}
+a:visited{
+  color:white
+}
+.border{
+  border: 1px solid white;
+  margin: 1.5rem;
+}

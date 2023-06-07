@@ -1,0 +1,26 @@
+.input {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.input__icon {
+  color: var(--black);
+}
+
+.input__icon__box {
+  background-color: var(--smoke);
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+}
