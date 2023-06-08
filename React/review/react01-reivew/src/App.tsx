@@ -9,7 +9,7 @@ function App() {
           <div className="mainContainer">
               <h1>Hello React</h1>
               <Button width={100} height={30} onClick={Alert}>
-                  <div>this is Button</div>
+                  this is Button
               </Button>
           </div>
       );
